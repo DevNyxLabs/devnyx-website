@@ -1,0 +1,545 @@
+@import url("bootstrap.css");
+@import url("animate.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400&subset=latin-ext");
+@import url("../../common/css/ionicons.min.css");
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #262626;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    color: #4fc1e9;
+    transition: all 0.25s ease-in-out 0s;
+    -moz-transition: all 0.25s ease-in-out 0s;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -o-transition: all 0.25s ease-in-out 0s;
+    -ms-transition: all 0.25s ease-in-out 0s;
+}
+
+a, a:hover, a:active, a:focus {
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    color: #4fc1e9;
+}
+
+a:hover {
+    color: #4fc1e9;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.block-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+}
+
+p {
+    line-height: 1.5;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (   min--moz-device-pixel-ratio: 2), only screen and (     -o-min-device-pixel-ratio: 2/1), only screen and (        min-device-pixel-ratio: 2), only screen and (                min-resolution: 192dpi), only screen and (                min-resolution: 2dppx) {
+
+    .logo-1x {
+        display: none !important;
+    }
+
+    .logo-2x {
+        display: block !important;
+    }
+
+    .preloader-logo-1x {
+        display: none !important;
+    }
+
+    .preloader-logo-2x {
+        display: block !important;
+    }
+
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+    overflow: hidden;
+    position: relative;
+    background: url("../img/bg-1.jpg");
+    background-size: cover;
+}
+
+#main > .container {
+    height: 100%;
+    padding: 100px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay-color {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+    text-align: left;
+    z-index: 3;
+}
+
+.logo a,
+.logo img {
+    width: 178px;
+    height: 40px;
+}
+
+.logo a {
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.logo img {
+    vertical-align: bottom;
+}
+
+.logo-1x {
+    display: block;
+}
+
+.logo-2x {
+    display: none;
+}
+
+.socials {
+    text-align: right;
+    margin-bottom: 50px;
+    z-index: 3;
+}
+
+.socials ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.socials li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.socials li:last-child {
+    margin-right: 0;
+}
+
+.socials li a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.25em;
+}
+
+.socials li a:hover {
+    background-color: #4fc1e9;
+    color: #fff;
+}
+
+.socials li {
+    overflow: hidden;
+}
+
+.title {
+    font-family: 'Roboto Slab', serif;
+    margin-top: 30px;
+    text-align: center;
+    z-index: 2;
+}
+
+.title > div {
+    font-size: 5em;
+    font-weight: 100;
+    color: #fff;
+    margin-top: 100px;
+    word-wrap: break-word;
+    text-align: center;
+    line-height: 1em;
+    display: inline-block;
+}
+
+.title .rotate {
+    display: inline-block;
+}
+
+.title span {
+    color: #4fc1e9;
+}
+
+.line > div {
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.title-paragraph {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.title-paragraph p {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+    max-width: 600px;
+}
+
+.subscribe-form {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.subscribe-form form {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width: 400px;
+    max-width: 90%;
+    color: #fff;
+    background: #4fc1e9;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 2px;
+    transition: all 0.25s ease-in-out 0s;
+    -moz-transition: all 0.25s ease-in-out 0s;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -o-transition: all 0.25s ease-in-out 0s;
+    -ms-transition: all 0.25s ease-in-out 0s;
+}
+
+.subscribe-form form:hover {
+    background: #37abd3;
+}
+
+.subscribe-form .sub-button {
+    position: relative;
+    display: inline-block;
+    left: 0;
+    font-size: 0.9em;
+    width: 100%;
+    opacity: 1;
+    transition: all 0.75s ease-in-out 0s;
+    -moz-transition: all 0.75s ease-in-out 0s;
+    -webkit-transition: all 0.75s ease-in-out 0s;
+    -o-transition: all 0.75s ease-in-out 0s;
+    -ms-transition: all 0.75s ease-in-out 0s;
+}
+
+.subscribe-form .sub-button a {
+    display: block;
+    color: #fff;
+    padding: 15px 20px;
+    cursor: pointer;
+    overflow: visible;
+    white-space: normal;
+}
+
+.subscribe-form .sub-input {
+    position: relative;
+    display: inline-block;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.75s ease-in-out 0s;
+    -moz-transition: all 0.75s ease-in-out 0s;
+    -webkit-transition: all 0.75s ease-in-out 0s;
+    -o-transition: all 0.75s ease-in-out 0s;
+    -ms-transition: all 0.75s ease-in-out 0s;
+}
+
+.subscribe-form .sub-button.active {
+    left: -100%;
+    opacity: 0;
+}
+
+.subscribe-form .sub-input.active {
+    left: -100%;
+    opacity: 1;
+}
+
+.subscribe-form .sub-input input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #262626;
+    font-weight: 400;
+    font-size: 0.9em;
+    width: 200px;
+}
+
+.subscribe-form button {
+    position: relative;
+    right: 0;
+    padding: 0 10px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #fff;
+    outline: none;
+    transition: all 0.125s ease-in-out 0s;
+    -moz-transition: all 0.125s ease-in-out 0s;
+    -webkit-transition: all 0.125s ease-in-out 0s;
+    -o-transition: all 0.125s ease-in-out 0s;
+    -ms-transition: all 0.125s ease-in-out 0s;
+}
+
+.subscribe-form button > span {
+    display: inline;
+    position: relative;
+    left: 10px;
+    transition: left 0.25s ease-in-out 0s;
+    -moz-transition: left 0.25s ease-in-out 0s;
+    -webkit-transition: left 0.25s ease-in-out 0s;
+    -o-transition: left 0.25s ease-in-out 0s;
+    -ms-transition: left 0.25s ease-in-out 0s;
+}
+
+.subscribe-form button:hover > span {
+    left: 0;
+}
+
+.subscribe-form button > i {
+    display: inline-block;
+    width: 20px;
+    position: relative;
+    left: 0;
+    opacity: 0;
+    color: #fff;
+    transition: all 0.25s ease-in-out 0s;
+    -moz-transition: all 0.25s ease-in-out 0s;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -o-transition: all 0.25s ease-in-out 0s;
+    -ms-transition: all 0.25s ease-in-out 0s;
+}
+
+.subscribe-form button:hover > i {
+    left: 10px;
+    opacity: 1;
+}
+
+.subscribe-form .placeholder {
+    color: #fff;
+}
+
+.subscribe-form input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.subscribe-form input:-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.subscribe-form input::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.subscribe-form input:-ms-input-placeholder {
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    #features ul {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #main {
+        height: auto;
+    }
+
+    #main > .container {
+        padding-top: 50px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .socials {
+        text-align: center;
+    }
+
+    .wrapper {
+        position: relative;
+        top: auto;
+        margin-top: 0 !important;
+    }
+
+    .title > div {
+        font-size: 3.5em;
+        margin-top: 0;
+    }
+
+    .title-paragraph p {
+        text-align: center;
+        padding: 0 30px;
+    }
+
+    .subscribe-form input[type=text] {
+        font-size: 1em;
+    }
+
+    .subscribe-form .sub-input input {
+        width: 150px;
+    }
+
+    .subscribe-form button {
+        font-size: 0.85em;
+        padding: 0;
+    }
+
+}
+
+/* countdown
+------------------------------------------ */
+#countdown {
+    clear: both;
+    max-width: 600px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+#countdown > span {
+    font: 62px/1em "montserrat-bold", sans-serif;
+    display: block;
+    padding: 12px 0 30px;
+    min-width: 25%;
+    float: left;
+}
+
+#countdown > span em {
+    font: 11px/18px "montserrat-regular", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 3px;
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media only screen and (max-width:900px) {
+    #countdown {
+        width: 92%;
+    }
+
+    #countdown > span {
+        font: 58px/1em "montserrat-bold", sans-serif;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    #countdown {
+        width: 100%;
+    }
+
+    #countdown > span {
+        font: 52px/1em "montserrat-bold", sans-serif;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    #countdown {
+        margin-bottom: 24px;
+    }
+
+    #countdown > span {
+        font: 48px/1em "montserrat-bold", sans-serif;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+    #countdown {
+        margin-bottom: 12px;
+    }
+
+    #countdown > span {
+        font: 37px/1em "montserrat-bold", sans-serif;
+    }
+
+    #countdown > span em {
+        font: 9px/18px "montserrat-regular", sans-serif;
+        letter-spacing: 1.5px;
+    }
+
+}
+
+@media only screen and (max-width:400px) {
+    #countdown > span {
+        font: 31px/1em "montserrat-bold", sans-serif;
+    }
+
+    #countdown > span em {
+        font: 8px/18px "montserrat-regular", sans-serif;
+        letter-spacing: 1px;
+    }
+
+}
