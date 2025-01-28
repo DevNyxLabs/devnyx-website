@@ -1,0 +1,46 @@
+body {
+    height: 100%; /* Ensure full height for scrolling */
+    margin: 0;
+}
+
+.content-wrapper {
+    min-height: 100vh; /* At least one full viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: #fefefe; /* Light background for sections */
+}
+
+.section {
+    padding: 150px 15px; /* Add spacing to sections */
+    text-align: center;
+}
+
+.section:nth-child(odd) {
+    background-color: #F2F2F2 ; /* Alternating background color */
+}
+
+.section:nth-child(even) {
+    background-color: #CDDBE4 ;
+}
+
+.footer {
+    padding: 20px 15px;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+}
+.navbar-brand img {
+    max-height: 130px; /* Adjust this value to set the desired height */
+    width: auto; /* Ensures the aspect ratio is maintained */
+    object-fit: contain; /* Ensures the image fits within its box */
+}
+.crm-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+
+}
+
+body {
+    padding-top: 56px; /* Adjust to match the height of your navbar */
+}
+
